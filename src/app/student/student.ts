@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-student',
-  imports: [],
+  imports: [NgStyle],
   templateUrl: './student.html',
   styleUrl: './student.css',
 })
