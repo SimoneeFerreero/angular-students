@@ -1,0 +1,4 @@
+<p>app funziona</p>
+@for (item of Animals; track $index) {
+  <p [ngStyle]="getStyle(item)" >{{$index + 1}}) {{ item.nome }} - {{ item.specie }} - {{ item.DataNascita }} - {{ item.tipo }}</p>
+}
