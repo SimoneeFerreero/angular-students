@@ -1,4 +1,6 @@
 @for (item of students; track $index) {
-  <p [ngStyle]="{'background-color': item.gender == 'm' ? M_COLOR : F_COLOR}" [ngClass]="{'absent': !item.present}">{{$index + 1}}) {{ item.name }} -
-  {{ item.city }}</p>
+ <!-- <p [ngStyle]="{'background-color': item.gender == 'm' ? M_COLOR : F_COLOR}" [ngClass]="{'absent': !item.present}">{{$index + 1}}) {{ item.name }} -
+  -->
+  <p>
+  {{ item.city }} è @if(item.present){ presente } @else { assente }</p>
 }

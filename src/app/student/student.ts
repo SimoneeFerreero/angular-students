@@ -32,4 +32,8 @@ export class Student {
     gender: 'm',
     present: true,
   }];
+
+  getStyle(s: any){
+    return {'background-color': s.gender == 'm' ? this.M_COLOR : this.F_COLOR, 'text-decoration': !s.present ? 'line-through' : 'none', 'font-weight': s.present ? 'bold' : 'normal'};
+  }
 }
