@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
-import { NgStyle } from '@angular/common';
+import { NgStyle, NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-student',
-  imports: [NgStyle],
+  imports: [NgStyle, NgClass],
   templateUrl: './student.html',
   styleUrl: './student.css',
 })
 export class Student {
+
+  M_COLOR = 'blue';
+  F_COLOR = 'pink';
   students: any[] = [{
     name: 'John Doe',
     city: 'New York',
